@@ -24,10 +24,10 @@ export function WaitlistSection() {
   }
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-4xl font-bold mb-4">
             Join the <span className="text-[#00B3E6]">Healthcare Revolution</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export function WaitlistSection() {
                   <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <Building className="h-6 w-6 text-[#00B3E6]" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-gray-900">50+ Hospitals</h4>
+                  <h4 className="text-lg font-semibold mb-2">50+ Hospitals</h4>
                   <p className="text-gray-600 text-sm">Already expressing interest across East Africa</p>
                 </CardContent>
               </Card>
@@ -54,39 +54,39 @@ export function WaitlistSection() {
                   <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <Users className="h-6 w-6 text-[#00B3E6]" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2 text-gray-900">Healthcare Partners</h4>
+                  <h4 className="text-lg font-semibold mb-2">Healthcare Partners</h4>
                   <p className="text-gray-600 text-sm">Collaborating with leading medical institutions</p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Why Join Early?</h3>
+              <h3 className="text-2xl font-bold">Why Join Early?</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex-shrink-0 flex items-center justify-center mt-1">
                     <span className="text-white text-xs font-bold">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Priority Access</h4>
+                    <h4 className="font-semibold">Priority Access</h4>
                     <p className="text-gray-600 text-sm">Be first to deploy MediLink in your facility</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex-shrink-0 flex items-center justify-center mt-1">
                     <span className="text-white text-xs font-bold">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Special Pricing</h4>
+                    <h4 className="font-semibold">Special Pricing</h4>
                     <p className="text-gray-600 text-sm">Exclusive early adopter discounts and packages</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-[#00B3E6] rounded-full flex-shrink-0 flex items-center justify-center mt-1">
                     <span className="text-white text-xs font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Shape the Product</h4>
+                    <h4 className="font-semibold">Shape the Product</h4>
                     <p className="text-gray-600 text-sm">Direct input on features and customizations</p>
                   </div>
                 </div>
@@ -96,14 +96,14 @@ export function WaitlistSection() {
 
           <Card className="bg-white border-gray-200 shadow-sm">
             <CardHeader>
-              <CardTitle className="text-center text-gray-900">Join the Waitlist</CardTitle>
+              <CardTitle className="text-center">Join the Waitlist</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Your Role</label>
                   <Select value={formData.role} onValueChange={(value) => setFormData({ ...formData, role: value })}>
-                    <SelectTrigger className="bg-gray-50 border-gray-300 text-gray-900">
+                    <SelectTrigger className="bg-gray-100 border-gray-300 text-gray-900">
                       <SelectValue placeholder="Select your role" />
                     </SelectTrigger>
                     <SelectContent>
@@ -124,7 +124,7 @@ export function WaitlistSection() {
                     placeholder="your.email@hospital.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500"
+                    className="bg-gray-100 border-gray-300 text-gray-900 placeholder:text-gray-500"
                     required
                   />
                 </div>
@@ -135,7 +135,7 @@ export function WaitlistSection() {
                     placeholder="Hospital or Organization Name"
                     value={formData.organization}
                     onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                    className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500"
+                    className="bg-gray-100 border-gray-300 text-gray-900 placeholder:text-gray-500"
                     required
                   />
                 </div>
@@ -146,7 +146,7 @@ export function WaitlistSection() {
                     value={formData.country}
                     onValueChange={(value) => setFormData({ ...formData, country: value })}
                   >
-                    <SelectTrigger className="bg-gray-50 border-gray-300 text-gray-900">
+                    <SelectTrigger className="bg-gray-100 border-gray-300 text-gray-900">
                       <SelectValue placeholder="Select your country" />
                     </SelectTrigger>
                     <SelectContent>

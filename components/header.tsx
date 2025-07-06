@@ -9,79 +9,75 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-[#00B3E6] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
+          <Link href="/" className="no-underline">
+            <div className="flex items-center space-x-2 cursor-pointer" >
+              <div className="w-8 h-8 bg-[#00B3E6] rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">M</span>
+              </div>
+              <span className="text-xl font-bold text-white">MediLink</span>
+              <span className="text-sm text-gray-400">by Vortan</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">MediLink</span>
-            <span className="text-sm text-gray-500">by Vortan</span>
-          </div>
 
-          {/* Desktop Navigation */}
+          </Link>
+
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#product" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="#product" className="text-gray-400 hover:text-white transition-colors  hover:underline">
               Product
             </Link>
-            <Link href="#platform" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="#platform" className="text-gray-400 hover:text-white transition-colors hover:underline">
               Platform
             </Link>
-            <Link href="#insights" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="#insights" className="text-gray-400 hover:text-white transition-colors  hover:underline">
               Insights
             </Link>
-            <Link href="#downloads" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/downloads" className="text-gray-400 hover:text-white transition-colors  hover:underline">
               Downloads
             </Link>
-            <Link href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
-              About
-            </Link>
+
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
             <Button
               variant="outline"
-              className="border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-900 bg-transparent"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent"
             >
               Book Demo
             </Button>
             <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Join Waitlist</Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-gray-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-800 pt-4">
             <div className="flex flex-col space-y-4">
-              <Link href="#product" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="#product" className="text-gray-400 hover:text-white transition-colors hover:underline">
                 Product
               </Link>
-              <Link href="#platform" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="#platform" className="text-gray-400 hover:text-white transition-colors hover:underline">
                 Platform
               </Link>
-              <Link href="#insights" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="#insights" className="text-gray-400 hover:text-white transition-colors hover:underline">
                 Insights
               </Link>
-              <Link href="#downloads" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="/downloads" className="text-gray-400 hover:text-white transition-colors hover:underline">
                 Downloads
               </Link>
-              <Link href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">
-                About
-              </Link>
+
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
                   variant="outline"
-                  className="border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-900 bg-transparent"
+                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent  cursor-pointer"
                 >
                   Book Demo
                 </Button>
-                <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Join Waitlist</Button>
+                <Button className="bg-[#00B3E6]  hover:bg-[#008CC4] text-white cursor-pointer">Join Waitlist</Button>
               </div>
             </div>
           </nav>
