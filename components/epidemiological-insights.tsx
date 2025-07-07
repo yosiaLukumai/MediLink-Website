@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { TrendingUp, AlertTriangle, MapPin, Brain, BarChart3, Globe } from "lucide-react"
+import Image from "next/image"
 
 export function EpidemiologicalInsights() {
   return (
@@ -105,7 +106,11 @@ export function EpidemiologicalInsights() {
             </div>
 
             <div className="relative">
-              <img
+
+
+              <Image
+                height={400}
+                width={500}
                 src="/epido.png"
                 alt="Epidemiological Insights Dashboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"

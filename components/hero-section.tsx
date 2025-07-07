@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Play, ArrowRight, Wifi, Shield, Zap } from "lucide-react"
+import { ArrowRight, Wifi, Shield, Zap } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export function HeroSection() {
@@ -85,11 +86,18 @@ export function HeroSection() {
 
           <div className="relative">
             <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 border border-gray-800">
-              <img
+              {/* <Image
                 src="/demo_medlink.jpg"
                 alt="MediLink Device"
                 className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              /> */}
+                    <Image
+                    width={600}
+                  height={500}
+                  src="/demo_medlink.jpg"
+                  alt="MediLink Device"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-xl">
               <div className="flex items-center space-x-2">

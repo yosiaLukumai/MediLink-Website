@@ -12,9 +12,9 @@ import { Textarea } from "./ui/textarea"
 import { toast } from "sonner"
 
 
-async function submitForm(data: any) {
+async function submitForm(data: { email: string; organization: string; country: string; role: string; message: string; }) {
   try {
-    
+
     const response = await fetch('/api/send', {
       method: 'POST',
       headers: {
@@ -29,8 +29,9 @@ async function submitForm(data: any) {
     }
 
     return await response.json();
-  } catch (error: any) {
-    return { success: false, message: error.message };
+  } catch {
+
+    return { success: false, message: "Something went wrong. Please try again later." };
   }
 }
 
@@ -56,7 +57,7 @@ export function WaitlistSection() {
       } else {
         toast.error(response.message || "Something went wrong. Please try again later.");
       }
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong. Please try again later.");
     }
 
@@ -231,7 +232,7 @@ export function WaitlistSection() {
 
               <div className="mt-6 text-center text-sm text-gray-500">
                 {/* <p>We'll keep you updated on our progress and notify you when MediLink is ready for deployment.</p> */}
-                <p>MediLink is entering its final phase. We're gearing up for deployment and will notify you as soon as it's ready.</p>
+                <p>MediLink is entering its final phase. We&apos;re gearing up for deployment and will notify you as soon as it&apos;s ready.</p>
               </div>
             </CardContent>
           </Card>

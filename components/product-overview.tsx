@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Wifi, Usb, Radio, Shield, Globe, Cpu } from "lucide-react"
+import Image from "next/image"
 
 export function ProductOverview() {
   return (
@@ -17,10 +18,18 @@ export function ProductOverview() {
 
         < div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img
+            {/* <img
               src="/gatewaypic.JPG"
               alt="MediLink Gateway Hub"
               className="w-full h-auto rounded-2xl shadow-xl"
+            /> */}
+
+            <Image
+              width={600}
+              height={500}
+              src="/gatewaypic.JPG"
+              alt="Gateway Hub"
+              className="w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
           <div className="space-y-6">
@@ -77,11 +86,20 @@ export function ProductOverview() {
             </div>
           </div>
           <div className="lg:order-1">
-            <img
+            {/* <img
               src="/demo_product.webp"
               alt="Gateway Hub"
               className="w-full h-auto rounded-2xl shadow-xl"
+            /> */}
+
+            <Image
+              width={600}
+              height={500}
+              src="/demo_product.webp"
+              alt="Gateway Device"
+              className="w-full h-auto rounded-2xl shadow-2xl"
             />
+
           </div>
         </div>
 

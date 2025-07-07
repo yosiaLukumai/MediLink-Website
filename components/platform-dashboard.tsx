@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Monitor, Smartphone, Server, Activity, AlertTriangle } from "lucide-react"
+import { Monitor, Server, Activity, AlertTriangle } from "lucide-react"
+import Image from "next/image"
 
 export function PlatformDashboard() {
   return (
@@ -82,11 +83,21 @@ export function PlatformDashboard() {
               </div>
             </div>
             <div className="relative">
-              <img
+              {/* <img
                 src="/dashdemo.webp"
                 alt="MediLink Dashboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              /> */}
+
+                            <Image
+                                            height={400}
+                                            width={500}
+                                            src="/dashdemo.webp"
+                                            alt="MediLink Dashboard"
+                                            className="w-full h-auto rounded-2xl shadow-2xl"
+                                          />
+
+
               <div className="absolute top-4 right-4 bg-[#00B3E6] text-white px-3 py-1 rounded-full text-sm font-semibold">
                 Live Data
               </div>

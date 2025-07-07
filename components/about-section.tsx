@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Users, Lightbulb, Target, Link } from "lucide-react"
+import { MapPin, Users, Lightbulb, Target } from "lucide-react"
 import { Button } from "./ui/button"
 import { Separator } from "./ui/separator"
+import Image from "next/image"
 
 export function AboutSection() {
   return (
@@ -15,7 +16,7 @@ export function AboutSection() {
             About <span className="text-[#00B3E6]">Vortan</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Based in Arusha, Tanzania, we're rooted in real-world healthcare gaps and committed to transforming medical care
+            Based in Arusha, Tanzania, we`&apos;re rooted in real-world healthcare gaps and committed to transforming medical care
             through innovative digital infrastructure.
           </p>
         </div>
@@ -28,7 +29,7 @@ export function AboutSection() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               We understand the unique infrastructure challenges in our region — from unreliable internet connectivity
-              to legacy medical equipment. That's why MediLink was designed from the ground up to work in real-world
+              to legacy medical equipment. That`&apos;s why MediLink was designed from the ground up to work in real-world
               African healthcare environments.
             </p>
             <div className="w-1/2">
@@ -47,11 +48,19 @@ export function AboutSection() {
 
           </div>
           <div className="relative">
-            <img
+            {/* <img
               src="/lab_bench.jpg"
               alt="Vortan Team"
               className="w-full h-auto rounded-2xl shadow-xl"
-            />
+            /> */}
+
+                       <Image
+                                width={600}
+                              height={500}
+                              src="/lab_bench.jpg"
+                              alt="MediLink Device"
+                              className="w-full h-auto rounded-2xl shadow-2xl"
+                            />
             <div className="absolute -bottom-4 -left-4 bg-[#00B3E6] rounded-2xl p-4 text-white">
               <MapPin className="h-6 w-6 mb-2" />
               <p className="font-semibold">Based in East Africa</p>

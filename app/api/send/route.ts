@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     if (!request.body) return;
     const formData = await request.json() as FormData;
 
-    const { data, error } = await resend.emails.send({
+    const {  error } = await resend.emails.send({
         from: 'MedLink Joining Waitlist <medilink@vortan.io>',
         to: ["yosialukumai@gmail.com", "danielgbmkongo@gmail.com", "scopeelius@gmai.com", "info@vortan.io"],
         subject: 'MedLink Joining Waitlist',

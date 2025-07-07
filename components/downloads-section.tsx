@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Download, Monitor, Smartphone, Cpu, FileText, QrCode, Settings } from "lucide-react"
+import { Download, Monitor, Cpu, FileText, QrCode, Settings } from "lucide-react"
 
 export function DownloadsSection() {
   return (
