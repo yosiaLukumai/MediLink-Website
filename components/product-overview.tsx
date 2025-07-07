@@ -15,10 +15,10 @@ export function ProductOverview() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        < div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="/placeholder.svg?height=400&width=500"
+              src="/gatewaypic.JPG"
               alt="MediLink Gateway Hub"
               className="w-full h-auto rounded-2xl shadow-xl"
             />
@@ -78,7 +78,7 @@ export function ProductOverview() {
           </div>
           <div className="lg:order-1">
             <img
-              src="/placeholder.svg?height=400&width=500"
+              src="/demo_product.webp"
               alt="Gateway Hub"
               className="w-full h-auto rounded-2xl shadow-xl"
             />

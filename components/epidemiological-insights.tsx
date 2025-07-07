@@ -11,8 +11,7 @@ export function EpidemiologicalInsights() {
             See the <span className="text-[#00B3E6]">Big Picture</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Use AI to detect equipment failure patterns, outbreaks, and regional care gaps. Integrate seamlessly with
-            Ministries of Health dashboards across East Africa.
+            Leverage AI to predict equipment failures, detect disease trends, and map care inequities. Sync effortlessly across health systems with a bold vision for transformative impact.
           </p>
         </div>
 
@@ -81,9 +80,9 @@ export function EpidemiologicalInsights() {
         <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold">Ministry of Health Integration</h3>
+              <h3 className="text-3xl font-bold">Epidomilogy Insights</h3>
               <p className="text-gray-400 text-lg">
-                Seamlessly connect with national health information systems to provide real-time insights for policy
+                Seamlessly connect with large health information systems to provide real-time insights for policy
                 makers and public health officials.
               </p>
 
@@ -98,16 +97,16 @@ export function EpidemiologicalInsights() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Globe className="h-6 w-6 text-[#00B3E6]" />
-                  <span className="text-gray-300">Multi-country deployment ready</span>
+                  <span className="text-gray-300">Better Decision Making</span>
                 </div>
               </div>
 
-              <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Request Integration Demo</Button>
+              <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Request More Information</Button>
             </div>
 
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=500"
+                src="/epido.png"
                 alt="Epidemiological Insights Dashboard"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
@@ -118,14 +117,14 @@ export function EpidemiologicalInsights() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-2 bg-gray-800 rounded-full px-6 py-3 border border-gray-700">
             <Globe className="h-5 w-5 text-[#00B3E6]" />
             <span className="text-sm font-medium text-gray-300">
               Starting in Tanzania • Expanding across East Africa
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

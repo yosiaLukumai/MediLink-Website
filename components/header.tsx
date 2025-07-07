@@ -24,13 +24,13 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#product" className="text-gray-400 hover:text-white transition-colors  hover:underline">
+            <Link href="/#product" className="text-gray-400 hover:text-white transition-colors  hover:underline">
               Product
             </Link>
-            <Link href="#platform" className="text-gray-400 hover:text-white transition-colors hover:underline">
+            <Link href="/#platform" className="text-gray-400 hover:text-white transition-colors hover:underline">
               Platform
             </Link>
-            <Link href="#insights" className="text-gray-400 hover:text-white transition-colors  hover:underline">
+            <Link href="/#insights" className="text-gray-400 hover:text-white transition-colors  hover:underline">
               Insights
             </Link>
             <Link href="/downloads" className="text-gray-400 hover:text-white transition-colors  hover:underline">
@@ -42,11 +42,21 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <Button
               variant="outline"
-              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent"
+              className="border-gray-700 text-gray-300 cursor-pointer hover:bg-gray-800 hover:text-white bg-transparent"
             >
-              Book Demo
+              <Link
+                href={"https://wa.me/255624445123"}
+                target="_blank"
+              >
+                Book Demo
+              </Link>
             </Button>
-            <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Join Waitlist</Button>
+            {/* <Button className="bg-[#00B3E6] hover:bg-[#008CC4] text-white">Join Waitlist</Button> */}
+            <Button asChild className="bg-[#00B3E6] cursor-pointer hover:bg-[#008CC4] text-white">
+              <Link href="#waitlist" className="cursor-pointer">
+                Join Waitlist
+              </Link>
+            </Button>
           </div>
 
           <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -72,12 +82,22 @@ export function Header() {
 
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
+                  asChild
                   variant="outline"
-                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent  cursor-pointer"
+                  className="border-gray-700 text-gray-300 hover:bg-gray-800  hover:text-white bg-transparent  cursor-pointer"
                 >
-                  Book Demo
+                  <Link
+                    href={"https://wa.me/255624445123"}
+                    target="_blank"
+                  >
+                    Book Demo
+                  </Link>
                 </Button>
-                <Button className="bg-[#00B3E6]  hover:bg-[#008CC4] text-white cursor-pointer">Join Waitlist</Button>
+                <Button asChild className="bg-[#00B3E6] cursor-pointer hover:bg-[#008CC4] text-white">
+                  <Link href="#waitlist" className="cursor-pointer">
+                    Join Waitlist
+                  </Link>
+                </Button>
               </div>
             </div>
           </nav>

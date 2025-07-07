@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Play, ArrowRight, Wifi, Shield, Zap } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -19,17 +20,36 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-[#00B3E6] cursor-grab hover:bg-[#008CC4] text-white px-8 py-4 text-lg rounded-xl">
-                Join the Waitlist
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <Link
+                  href={"/#waitlist"}
+                  target="_parent"
+                >
+                  <div className="flex items-center justify-center">
+                    <span>
+                      Join the Waitlist
+                    </span>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </div>
+                </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
+                asChild
                 className="border-gray-700 cursor-pointer text-gray-300 hover:bg-gray-800 hover:text-white px-8 py-4 text-lg rounded-xl bg-transparent"
               >
-                Book a Demo
+
+                <Link
+                  href={"https://wa.me/255624445123"}
+                  target="_blank"
+                >
+                  <span>
+                    Book a Demo
+                  </span>
+                </Link>
+
               </Button>
-           
+
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8">

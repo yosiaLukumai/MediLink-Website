@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Mail, Linkedin, Twitter, Github, MapPin } from "lucide-react"
+import { Mail, Linkedin, Twitter, Github, Instagram, MapPin, MessageCircle, Phone, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
@@ -20,7 +20,7 @@ export function Footer() {
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-500">
               <MapPin className="h-4 w-4" />
-              <span>Based in East Africa</span>
+              <span>Based in Arusha, Tanzania</span>
             </div>
           </div>
           <div className="space-y-4">
@@ -46,13 +46,13 @@ export function Footer() {
               <Link href="/downloads" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Downloads
               </Link>
-              <Link href="/docs" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <Link href="/downloads" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Documentation
               </Link>
-              <Link href="/api" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <Link href="/downloads" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 API Reference
               </Link>
-              <Link href="/support" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <Link href="/downloads" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Support
               </Link>
             </div>
@@ -62,19 +62,46 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="h-4 w-4 text-[#00B3E6]" />
-                <a href="mailto:support@medlink.vortan.io" className="text-gray-400 hover:text-white transition-colors">
-                  support@medlink.vortan.io
+                <a href="mailto:info@vortan.io" className="text-gray-400 hover:text-white transition-colors">
+                  info@vortan.io
+                </a>
+              </div>
+              <div className="flex items-center space-x-2 text-sm">
+                <Phone className="h-4 w-4 text-[#00B3E6]" />
+                <a href="tel:255742414757" className="text-gray-400 hover:text-white transition-colors">
+                  +255-742-414-757
                 </a>
               </div>
               <div className="flex space-x-3">
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 hover:text-white">
-                  <Linkedin className="h-4 w-4" />
+                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://www.linkedin.com/company/vortan/"}
+                    target="_blank"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </Link>
+
                 </Button>
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 hover:text-white">
-                  <Twitter className="h-4 w-4" />
+                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://wa.me/255624445123"}
+                    target="_blank"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                  </Link>
                 </Button>
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 hover:text-white">
-                  <Github className="h-4 w-4" />
+                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://www.youtube.com/@Vortan_io"}
+                    target="_blank"
+                  >
+                    <Youtube className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild size="sm" variant="ghost" className="p-2 hover:bg-gray-800 text-gray-400 cursor-pointer hover:text-white">
+                  <Link href='https://github.com/Vortan-Labs' target="_blank">
+                    <Github className="h-4 w-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -82,17 +109,15 @@ export function Footer() {
         </div>
         <Separator className="bg-gray-800 mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-sm text-gray-500">© 2024 Vortan. All rights reserved.</div>
+          <div className="text-sm text-gray-500">© 2025 Vortan. All rights reserved.</div>
           <div className="flex space-x-6 text-sm">
-            <Link href="/privacy" className="text-gray-500 hover:text-white transition-colors">
+            <Link href="/downloads" className="text-gray-500 hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-500 hover:text-white transition-colors">
+            <Link href="/downloads" className="text-gray-500 hover:text-white transition-colors">
               Terms of Service
             </Link>
-            <Link href="/cookies" className="text-gray-500 hover:text-white transition-colors">
-              Cookie Policy
-            </Link>
+
           </div>
         </div>
       </div>

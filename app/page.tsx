@@ -21,7 +21,6 @@ export default function Home() {
         <QuickLogSection />
         <EpidemiologicalInsights />
         <WaitlistSection />
-        <DownloadsSection />
         <AboutSection />
       </main>
       <Footer />
