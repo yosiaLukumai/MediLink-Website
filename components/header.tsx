@@ -4,22 +4,20 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Logo from "./logo"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm border-b border-gray-800 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
-          <Link href="/" className="no-underline">
-            <div className="flex items-center space-x-2 cursor-pointer" >
-              <div className="w-8 h-8 bg-[#00B3E6] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
-              </div>
-              <span className="text-xl font-bold text-white">MediLink</span>
-              <span className="text-sm text-gray-400">by Vortan</span>
-            </div>
+          <Link href="/">
+            {/* <div className="flex items-center space-x-2 cursor-pointer" > */}
+              <Logo className="w-32 h-20"  />
+               
+            {/* </div> */}
 
           </Link>
 
@@ -59,7 +57,7 @@ export function Header() {
             </Button>
           </div>
 
-          <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden  text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>

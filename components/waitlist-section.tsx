@@ -93,7 +93,7 @@ export function WaitlistSection() {
                     <Building className="h-6 w-6 text-[#00B3E6]" />
                   </div>
                   <h4 className="text-lg font-semibold mb-2">Hospitals</h4>
-                  <p className="text-gray-600 text-sm">Already expressing interest across East Africa</p>
+                  <p className="text-gray-600 text-sm">Already expressing interest across Some Hospitals</p>
                 </CardContent>
               </Card>
 

@@ -14,8 +14,10 @@ export function HeroSection() {
                 Digitize Hospital Devices. <span className="text-[#00B3E6]">Empower Better Care.</span>
               </h1>
               <p className="text-xl text-gray-400 leading-relaxed">
-                MediLink connects any hospital machine to the cloud — turning analog readings into actionable insight
-                for healthcare transformation across East Africa.
+                {/* MediLink connects any hospital machine to the cloud — turning analog readings into actionable insight
+                for healthcare transformation across East Africa. */}
+                MediLink connects any hospital machine to configurable endpoints or MediLink Platform—transforming analog signals into real-time insights for smarter, faster care delivery.
+
               </p>
             </div>
 
@@ -60,7 +62,7 @@ export function HeroSection() {
                 </div>
                 <div>
                   <p className="font-semibold">Works Offline</p>
-                  <p className="text-sm text-gray-500">No Wi-Fi? No problem</p>
+                  <p className="text-sm text-gray-500">No Internet? No problem</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

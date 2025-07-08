@@ -13,7 +13,7 @@ export function QuickLogSection() {
             <span className="text-[#00B3E6]">QuickLog:</span> Instant Medical Logging
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Like a quick photo, QuickLog captures `&apos;who-what-when`&apos; in a second — ensuring no data is missed. Inspired by
+            Like a quick photo, QuickLog captures &apos;who-what-when&apos; in a second — ensuring no data is missed. Inspired by
             social media simplicity for healthcare precision.
           </p>
         </div>

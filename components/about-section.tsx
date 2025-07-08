@@ -16,7 +16,7 @@ export function AboutSection() {
             About <span className="text-[#00B3E6]">Vortan</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Based in Arusha, Tanzania, we`&apos;re rooted in real-world healthcare gaps and committed to transforming medical care
+            Based in Arusha, Tanzania, we&apos;re rooted in real-world healthcare gaps and committed to transforming medical care
             through innovative digital infrastructure.
           </p>
         </div>
@@ -29,8 +29,8 @@ export function AboutSection() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               We understand the unique infrastructure challenges in our region — from unreliable internet connectivity
-              to legacy medical equipment. That`&apos;s why MediLink was designed from the ground up to work in real-world
-              African healthcare environments.
+              to legacy medical equipment. That&apos;s why MediLink was designed from the ground up to work in real-world
+              healthcare environments.
             </p>
             <div className="w-1/2">
               <Button asChild className="w-full text-white py-3">
@@ -54,16 +54,19 @@ export function AboutSection() {
               className="w-full h-auto rounded-2xl shadow-xl"
             /> */}
 
-                       <Image
-                                width={600}
-                              height={500}
-                              src="/lab_bench.jpg"
-                              alt="MediLink Device"
-                              className="w-full h-auto rounded-2xl shadow-2xl"
-                            />
-            <div className="absolute -bottom-4 -left-4 bg-[#00B3E6] rounded-2xl p-4 text-white">
-              <MapPin className="h-6 w-6 mb-2" />
-              <p className="font-semibold">Based in East Africa</p>
+            <Image
+              width={600}
+              height={500}
+              src="/lab_bench.jpg"
+              alt="MediLink Device"
+              className="w-full h-auto rounded-2xl shadow-2xl"
+            />
+            <div className="absolute -bottom-4 -left-4 bg-[#00B3E6] rounded-2xl p-2 text-white">
+
+              <div className="flex">
+                <MapPin className="h-6 w-6 mb-2" />
+                <p className="ml-1 font-semibold">Based in Arusha, Tanzania</p>
+              </div>
             </div>
           </div>
         </div>
@@ -75,7 +78,7 @@ export function AboutSection() {
                 <Lightbulb className="h-6 w-6 text-[#00B3E6]" />
               </div>
               <h4 className="text-xl font-semibold mb-2">Innovation</h4>
-              <p className="text-gray-600">Cutting-edge solutions designed for African healthcare.</p>
+              <p className="text-gray-600">Cutting-edge solutions designed for diverse healthcare environments.</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-50 border-gray-200 hover:bg-gray-100 transition-colors shadow-sm">
