@@ -154,9 +154,7 @@ import {
   Cloud,
   Smartphone,
   Monitor,
-  HardDrive,
   Signal,
-  Battery,
   Settings,
   EthernetPort,
 } from "lucide-react"
