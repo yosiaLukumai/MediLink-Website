@@ -32,6 +32,7 @@ export function AboutSection() {
               to legacy medical equipment. That&apos;s why MediLink was designed from the ground up to work in real-world
               healthcare environments.
             </p>
+            
             <div className="w-1/2">
               <Button asChild className="w-full text-white py-3">
                 <a
