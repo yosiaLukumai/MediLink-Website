@@ -16,8 +16,11 @@ export function AboutSection() {
             About <span className="text-[#00B3E6]">Vortan</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Based in Arusha, Tanzania, we&apos;re rooted in real-world healthcare gaps and committed to transforming medical care
-            through innovative digital infrastructure.
+     
+            <span className="font-bold mr-1" >
+              Vortan 
+            </span>
+            transforms healthcare with smart tech—and our innovation goes beyond medicine, powering intelligent solutions that scale across industries.
           </p>
         </div>
 

@@ -96,7 +96,7 @@ export function HeroSection() {
                     <Image
                     width={600}
                   height={500}
-                  src="/demo_medlink.jpg"
+                  src="/metal.png"
                   alt="MediLink Device"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />

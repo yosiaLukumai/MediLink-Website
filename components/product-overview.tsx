@@ -327,7 +327,7 @@ export function ProductOverview() {
                   <Image
                     width={600}
                     height={500}
-                    src="/demo_product.webp"
+                    src="/metal.png"
                     alt="Gateway Hub"
                     className="w-full h-auto rounded-2xl shadow-2xl"
                   />
@@ -382,7 +382,7 @@ export function ProductOverview() {
                   <Image
                     width={600}
                     height={500}
-                    src="/demo_product.webp"
+                    src="/piv.png"
                     alt="Gateway Device"
                     className="w-full h-auto rounded-2xl shadow-2xl"
                   />
